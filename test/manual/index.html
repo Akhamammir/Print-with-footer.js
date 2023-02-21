@@ -40,6 +40,8 @@
     function printHtml() {
       printJS({
         printable: 'test',
+        header: 'JSON Print Test',
+        footer: 'JSON Print Footer',
         type: 'html'
       })
     }
@@ -49,6 +51,8 @@
         printable: `<h1>Print.js Raw HTML Print Test</h1>
         <p class="blueText">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         <p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>`,
+        header: 'JSON Print Header',
+        footer: 'JSON Print Footer',
         type: 'raw-html',
         style: '.blueText {color:blue;}'
       })
@@ -97,6 +101,8 @@
             columnSize: 4
           }
         ],
+        header: 'JSON Print Test',
+        footer: 'JSON Print Footer',
         type: 'json',
 				header: 'JSON Print Test',
 				documentTitle: 'Print.js JSON Test'
@@ -173,6 +179,8 @@
           'test-01.jpg',
           'test-02.jpg'
         ],
+        header: 'JSON Print Test',
+        footer: 'JSON Print Footer',
         type: 'image'
       })
     }

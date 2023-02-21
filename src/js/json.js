@@ -1,4 +1,4 @@
-import { capitalizePrint, addHeader } from './functions'
+import { capitalizePrint, addHeader, addFooter } from './functions'
 import Print from './print'
 
 export default {
@@ -33,6 +33,10 @@ export default {
     // Check if we are adding a print header
     if (params.header) {
       addHeader(params.printableElement, params)
+    }
+    
+    if (params.footer) {
+      addFooter(params.printableElement, params)
     }
 
     // Build the printable html data

@@ -1,4 +1,4 @@
-import { collectStyles, addHeader } from './functions'
+import { collectStyles, addHeader, addFooter } from './functions'
 import Print from './print'
 
 export default {
@@ -18,6 +18,10 @@ export default {
     // Add header
     if (params.header) {
       addHeader(params.printableElement, params)
+    }
+
+    if (params.footer) {
+      addFooter(params.printableElement, params)
     }
 
     // Print html element contents
